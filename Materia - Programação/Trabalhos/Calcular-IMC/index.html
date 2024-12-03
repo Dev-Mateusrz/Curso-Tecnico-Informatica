@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculando IMC</title>
+  </head>
+  <body>
+    <h1>Calculando IMC - Índice de Massa Corporal</h1>
+    <p>Digite seu nome: <input type="text" name="" id="nome_usuario" /></p>
+    <p>
+      Digite seu peso:
+      <input type="number" name="" id="peso_usuario" min="0" /> (kg)
+    </p>
+    <p>
+      Digite sua altura:
+      <input type="number" name="" id="altura_usuario" min="0" /> (m)
+    </p>
+    <input type="button" value="Calcular IMC" onclick="CalcularIMC()" />
+    <div id="resultados"></div>
+  </body>
+
+  <script>
+    function CalcularIMC() {
+      let nome = document.getElementById("nome_usuario");
+      let peso = document.getElementById("peso_usuario").value;
+      let altura = document.getElementById("altura_usuario").value;
+      let res = document.getElementById("resultados");
+
+      calculo = peso / (altura * altura);
+
+      res.innerHTML = `Seu imc é ${calculo.toFixed(2)}`;
+
+      if (peso.length == 0 || altura.length == 0) {
+        alert("Preencha todos os campos abaixo!");
+        res.innerHTML =
+          "<p><strong>Você precisa preencher todos os campos acima! [ERROR]</strong></p>";
+      }
+
+      /*
+        if(calculo < 18.6) {
+        res.innerHTML += `<p>Você está abaixo do peso!</p>`
+      } else if ( calculo >= 18.6 || calculo <= 24.9) {
+        res.innerHTML += `<p>Você está no peso ideal. Parábéns</p>`
+      }
+      */
+    }
+  </script>
+</html>
