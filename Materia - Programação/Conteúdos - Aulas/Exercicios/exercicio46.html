@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idades</title>
+</head>
+<body>
+    <label for="">Nome do Cachorro</label>
+    <input id="nome_cachorro" type="text"> <br>
+    <label for="">Idade do Cachorro</label>
+    <input id="idade_cachorro" type="number">
+    <input type="button" value="Calcular" onclick="CalcularIdadeHumana()">
+    <div id="resultados"></div>
+</body>
+    <script>
+        alert("Seja Bem-vindo(a)")
+        let nome = window.document.getElementById("nome_cachorro")
+        let idade_cachorro = window.getElementById("idade_cachorro").value
+        let res = window.getElementById("resultados")
+
+        function CalcularIdadeHumana(){
+            idade_humana = idade_cachorro*7
+            mensagem = `A idade humano do cachorro ${nome}, é de ${idade_humana}.` 
+        }
+    </script>
+</html>

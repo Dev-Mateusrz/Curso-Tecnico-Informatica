@@ -1,0 +1,55 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Multa Transito</title>
+</head>
+
+<body>
+    <img src="https://gsobmidia.com.br/uploads/lojas/287/detran_1604943899.jpg" alt="Imagem do Detran" width="400">
+
+    <script>
+      
+            var velocidade = parseInt(prompt("Informe a valocidade do carro:"))
+
+        if (!velocidade) mensagem = "Velocidade informada não é valida!"
+        else
+            if (velocidade <= 60) mensagem = "Você está dentro da velocidade limite. Use cinto de segurança!"
+            else mensagem = "Você ultrapassou a velocidade! Você foi MULTADO!"
+
+        alert(mensagem)
+    </script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Multa Transito</title>
+  </head>
+
+  <body>
+    <img
+      src="https://gsobmidia.com.br/uploads/lojas/287/detran_1604943899.jpg"
+      alt="Imagem do Detran"
+      width="400"
+    />
+
+    <script>
+      var idade = parseInt(prompt("Informe a sua idade: "));
+
+      if (!idade) mensagem = "Idade inválida!";
+      else if (idade < 18) mensagem = "Você não pode dirigir!";
+      else mensagem = "Parabéns, você pode dirigir!";
+
+      alert(mensagem);
+    </script>
+  </body>
+</html>
