@@ -45,4 +45,4 @@ function calculoHorasTrabalhadas(nome_funcionario, horas_trabalhadas, moeda) {
   }
 }
 
-calculoHorasTrabalhadas('Mateus', 16, 'EURO')
+calculoHorasTrabalhadas('Mateus', 24, 'euro')
