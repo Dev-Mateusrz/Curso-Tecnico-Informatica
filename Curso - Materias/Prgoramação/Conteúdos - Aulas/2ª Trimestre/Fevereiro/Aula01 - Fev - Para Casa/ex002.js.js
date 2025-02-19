@@ -1,8 +1,8 @@
 function calculoHorasTrabalhadas(nome_funcionario, horas_trabalhadas, moeda) {
-  valorDolarCanadense = 4.0; // DolarCanadense em 19-02-2025 
-  valorDolar = 5.7; // Dolar em 19-02-2025
-  valorLibra = 7.18; // Libra em 19-02-2025
-  valorEuro = 5.94; // Euro em 19-02-2025
+  valorDolarCanadense = 4.0; // DolarCanadense em Real | 19-02-2025 
+  valorDolar = 5.7; // Dolar em Real | 19-02-2025
+  valorLibra = 7.18; // Libra em Real | 19-02-2025
+  valorEuro = 5.94; // Euro em Real | 19-02-2025
   valor = 0;
 
   switch (moeda) {
