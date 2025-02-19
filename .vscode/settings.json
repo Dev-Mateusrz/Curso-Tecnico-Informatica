@@ -231,7 +231,7 @@
     "Usuario",
     "WEBPUSH"
   ],
-  "workbench.colorTheme": "Rosé Pine Dawn",
+  "workbench.colorTheme": "Rosé Pine Moon",
   "workbench.statusBar.visible": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
